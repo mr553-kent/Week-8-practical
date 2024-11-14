@@ -1,0 +1,52 @@
+"0","glimpse(data)"
+"1","Rows: 15,160"
+"1",""
+"1","
+"
+"1","Columns: 12"
+"1",""
+"1","
+"
+"1","$ indicator                 [3m[38;5;246m<chr>[39m[23m ""Alcohol-related hospital admissions"", ""Alcohol-related hospital admissions"", ""Alcohol-related hospital admissions"", ""Alcohol-rel…
+$ area_name                 [3m[38;5;246m<chr>[39m[23m ""Scotland"", ""Culter"", ""Cults, Bieldside & Milltimber West"", ""Cults, Bieldside & Milltimber East"", ""Garthdee"", ""Braeside, Mannofie…
+$ area_code                 [3m[38;5;246m<chr>[39m[23m ""S00000001"", ""S02001236"", ""S02001237"", ""S02001238"", ""S02001239"", ""S02001240"", ""S02001241"", ""S02001242"", ""S02001243"", ""S02001244"",…
+$ area_type                 [3m[38;5;246m<chr>[39m[23m ""Scotland"", ""Intermediate zone"", ""Intermediate zone"", ""Intermediate zone"", ""Intermediate zone"", ""Intermediate zone"", ""Intermediat…
+$ year                      [3m[38;5;246m<dbl>[39m[23m 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 201…
+$ period                    [3m[38;5;246m<chr>[39m[23m ""2010/11 financial year"", ""2010/11 financial year"", ""2010/11 financial year"", ""2010/11 financial year"", ""2010/11 financial year"",…
+$ numerator                 [3m[38;5;246m<dbl>[39m[23m 38976, 24, 24, 24, 60, 15, 15, 9, 30, 45, 12, 42, 12, 27, 51, 42, 21, 21, 63, 30, 12, 27, 90, 96, 36, 39, 96, 39, 27, 72, 57, 75,…
+$ measure                   [3m[38;5;246m<dbl>[39m[23m 759.79, 475.18, 732.32, 372.46, 1306.45, 359.21, 416.62, 233.21, 601.08, 1252.81, 275.05, 1055.07, 422.91, 474.19, 1701.90, 1936.…
+$ lower_confidence_interval [3m[38;5;246m<dbl>[39m[23m 752.20, 299.39, 452.81, 233.27, 985.89, 203.17, 227.56, 109.86, 404.94, 913.99, 145.88, 724.98, 213.12, 290.40, 1222.42, 1304.74,…
+$ upper_confidence_interval [3m[38;5;246m<dbl>[39m[23m 767.44, 715.42, 1114.28, 562.68, 1695.69, 586.30, 695.22, 431.78, 857.64, 1675.02, 471.03, 1470.69, 746.74, 720.67, 2292.78, 2732…
+$ definition                [3m[38;5;246m<chr>[39m[23m ""Age-sex standardised rate per 100,000"", ""Age-sex standardised rate per 100,000"", ""Age-sex standardised rate per 100,000"", ""Age-s…
+$ data_source               [3m[38;5;246m<chr>[39m[23m ""Public Health Scotland (SMR01)"", ""Public Health Scotland (SMR01)"", ""Public Health Scotland (SMR01)"", ""Public Health Scotland (SM…"
+"1",""
+"1","
+"
+"0","iz_data <- data %>%"
+"0","  filter(area_type == ""Intermediate zone"") %>%"
+"0","  select(area_name,area_code,year,measure)"
+"0",""
+"0","glimpse(intermediate_zone_codes)"
+"1","Rows: 1,279"
+"1",""
+"1","
+"
+"1","Columns: 9"
+"1",""
+"1","
+"
+"1","$ IntZone     [3m[38;5;246m<chr>[39m[23m ""S02001236"", ""S02001237"", ""S02001238"", ""S02001239"", ""S02001240"", ""S02001241"", ""S02001242"", ""S02001243"", ""S02001244"", ""S02001245"", ""S02001246"", …
+$ IntZoneName [3m[38;5;246m<chr>[39m[23m ""Culter"", ""Cults, Bieldside and Milltimber West"", ""Cults, Bieldside and Milltimber East"", ""Garthdee"", ""Braeside, Mannofield, Broomhill and Seaf…
+$ CA          [3m[38;5;246m<chr>[39m[23m ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", ""S12000033"", …
+$ CAName      [3m[38;5;246m<chr>[39m[23m ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberde…
+$ HSCP        [3m[38;5;246m<chr>[39m[23m ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", ""S37000001"", …
+$ HSCPName    [3m[38;5;246m<chr>[39m[23m ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberdeen City"", ""Aberde…
+$ HB          [3m[38;5;246m<chr>[39m[23m ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", ""S08000020"", …
+$ HBName      [3m[38;5;246m<chr>[39m[23m ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"",…
+$ Country     [3m[38;5;246m<chr>[39m[23m ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", ""S92000003"", …"
+"1",""
+"1","
+"
+"0","iz_info <- intermediate_zone_codes %>%"
+"0","  select(IntZone,HBName)"
+"0",""

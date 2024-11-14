@@ -1,0 +1,4 @@
+"0","fev_count <- fev_data %>%"
+"0","  group_by(sex, smoke) %>%"
+"0","  summarise(smoke_count = n())"
+"2","`summarise()` has grouped output by 'sex'. You can override using the `.groups` argument."

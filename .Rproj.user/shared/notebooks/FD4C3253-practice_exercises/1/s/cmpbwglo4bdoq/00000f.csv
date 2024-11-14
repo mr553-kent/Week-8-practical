@@ -1,0 +1,7 @@
+"0",""
+"0","median_admissions %>%"
+"0","  filter(year == 2019) %>%"
+"0","  rename(alcohol_admissions = median_admissions) %>%"
+"0","  ggplot(aes(x=health_board, y=alcohol_admissions)) + "
+"0","  geom_bar(stat = ""identity"")"
+"0",""

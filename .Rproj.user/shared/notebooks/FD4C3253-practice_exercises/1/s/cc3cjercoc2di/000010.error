@@ -1,0 +1,1 @@
+{"frames":[],"message":"Error: unexpected ')' in:\n\"  ggplot(aes(x=reorder(health_board,alcohol_admissions), y=alcohol_admissions, colour = health_board)) + \n  geom_bar(stat = \"identity\"))\"\n"}

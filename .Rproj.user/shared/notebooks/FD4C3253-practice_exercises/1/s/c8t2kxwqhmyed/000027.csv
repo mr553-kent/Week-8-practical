@@ -1,0 +1,4 @@
+"0","median_admissions <- left_join(median_admissions, deprived_ratio, by = c('health_board' = 'NHS health board'))"
+"0",""
+"0",""
+"0",""

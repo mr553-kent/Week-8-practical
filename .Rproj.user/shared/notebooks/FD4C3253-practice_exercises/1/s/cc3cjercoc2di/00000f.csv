@@ -1,0 +1,10 @@
+"0",""
+"0","median_admissions %>%"
+"0","  filter(year == 2019) %>%"
+"0","  rename(alcohol_admissions = median_admissions) %>%"
+"0","  ggplot(aes(x=reorder(health_board,alcohol_admissions), y=alcohol_admissions, colour = health_board)) + "
+"0","  geom_bar(stat = ""identity"")) +"
+"2","Error: unexpected ')' in:
+""  ggplot(aes(x=reorder(health_board,alcohol_admissions), y=alcohol_admissions, colour = health_board)) + 
+  geom_bar(stat = ""identity""))""
+"

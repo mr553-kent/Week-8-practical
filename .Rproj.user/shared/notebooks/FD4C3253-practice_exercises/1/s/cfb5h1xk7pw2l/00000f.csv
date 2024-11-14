@@ -1,0 +1,6 @@
+"0",""
+"0","median_admissions <- admission_data %>%"
+"0","  group_by(year, health_board) %>%"
+"0","  summarise(median_admissions = median(alcohol_admissions))"
+"2","`summarise()` has grouped output by 'year'. You can override using the `.groups` argument."
+"0","head(median_admissions)"

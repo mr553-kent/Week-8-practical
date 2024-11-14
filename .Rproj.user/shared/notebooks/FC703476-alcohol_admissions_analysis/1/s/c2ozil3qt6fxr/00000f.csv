@@ -1,0 +1,41 @@
+"0","admission_data <- left_join(iz_data,iz_info, by = c(""area_code"" = ""IntZone""))"
+"0",""
+"0","glimpse(admission_data)"
+"1","Rows: 12,790"
+"1",""
+"1","
+"
+"1","Columns: 5"
+"1",""
+"1","
+"
+"1","$ area_name [3m[38;5;246m<chr>[39m[23m ""Culter"", ""Cults, Bieldside & Milltimber West"", ""Cults, Bieldside & Milltimber East"", ""Garthdee"", ""Braeside, Mannofield, Broomhill & Seafield Eas…
+$ area_code [3m[38;5;246m<chr>[39m[23m ""S02001236"", ""S02001237"", ""S02001238"", ""S02001239"", ""S02001240"", ""S02001241"", ""S02001242"", ""S02001243"", ""S02001244"", ""S02001245"", ""S02001246"", ""S…
+$ year      [3m[38;5;246m<dbl>[39m[23m 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2…
+$ measure   [3m[38;5;246m<dbl>[39m[23m 475.18, 732.32, 372.46, 1306.45, 359.21, 416.62, 233.21, 601.08, 1252.81, 275.05, 1055.07, 422.91, 474.19, 1701.90, 1936.62, 496.69, 511.25, 1522…
+$ HBName    [3m[38;5;246m<chr>[39m[23m ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""NHS Grampian"", ""…"
+"1",""
+"1","
+"
+"0","admission_data <- admission_data %>%"
+"0","  mutate(HBName = gsub(""NHS "", """", HBName)) %>%"
+"0","  rename(health_board = HBName,"
+"0","         alcohol_admissions = measure)"
+"0",""
+"0","glimpse(admission_data)"
+"1","Rows: 12,790"
+"1",""
+"1","
+"
+"1","Columns: 5"
+"1",""
+"1","
+"
+"1","$ area_name          [3m[38;5;246m<chr>[39m[23m ""Culter"", ""Cults, Bieldside & Milltimber West"", ""Cults, Bieldside & Milltimber East"", ""Garthdee"", ""Braeside, Mannofield, Broomhill & Sea…
+$ area_code          [3m[38;5;246m<chr>[39m[23m ""S02001236"", ""S02001237"", ""S02001238"", ""S02001239"", ""S02001240"", ""S02001241"", ""S02001242"", ""S02001243"", ""S02001244"", ""S02001245"", ""S0200…
+$ year               [3m[38;5;246m<dbl>[39m[23m 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2010…
+$ alcohol_admissions [3m[38;5;246m<dbl>[39m[23m 475.18, 732.32, 372.46, 1306.45, 359.21, 416.62, 233.21, 601.08, 1252.81, 275.05, 1055.07, 422.91, 474.19, 1701.90, 1936.62, 496.69, 511…
+$ health_board       [3m[38;5;246m<chr>[39m[23m ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Grampian"", ""Gra…"
+"1",""
+"1","
+"

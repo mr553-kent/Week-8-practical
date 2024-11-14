@@ -1,0 +1,7 @@
+"0","fev_data %>%"
+"0","  group_by(age, smoke) %>%"
+"0","  summarise(fev_mean = mean(fev)) %>%"
+"0","  mutate(smoke = as.character(smoke)) %>%"
+"0","  ggplot() +"
+"0","  geom_line(aes(x = age, y = fev_mean, colour = smoke))"
+"2","`summarise()` has grouped output by 'age'. You can override using the `.groups` argument."

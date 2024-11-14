@@ -1,0 +1,6 @@
+"0","fev_data %>%"
+"0","  ggplot() +"
+"0","  geom_point(aes(x = age, y = fev)) +"
+"0","  ylim(0, 7) +"
+"0","  ylab(""Forced exhalation\nvolume (litres)"") +"
+"0","  ggtitle(""Distribution of FEV"")"

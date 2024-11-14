@@ -1,0 +1,4 @@
+"0","fev_data %>%"
+"0","  mutate(sex = as.character(sex)) %>% # change sex from continuous to categorical variable"
+"0","  ggplot() +"
+"0","  geom_point(aes(x = age, y = fev, colour = sex))"

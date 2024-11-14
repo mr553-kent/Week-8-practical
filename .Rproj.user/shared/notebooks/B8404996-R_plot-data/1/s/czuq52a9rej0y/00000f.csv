@@ -1,0 +1,5 @@
+"0","fev_data %>%"
+"0","  mutate(sex = as.character(sex)) %>%"
+"0","  ggplot() +"
+"0","  geom_point(aes(x = age, y = fev, colour = sex)) +"
+"0","  geom_smooth(aes(x = age, y = fev))"

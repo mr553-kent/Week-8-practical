@@ -1,0 +1,5 @@
+"0","median_admissions %>% "
+"0","  filter(year == 2019) %>%"
+"0","  ggplot(aes(x = percent_deprived, y = median_admissions)) +"
+"0","  geom_point() +"
+"0","  geom_text(aes(label=health_board), size = 2, nudge_y = 20, nudge_x = -0.015)"

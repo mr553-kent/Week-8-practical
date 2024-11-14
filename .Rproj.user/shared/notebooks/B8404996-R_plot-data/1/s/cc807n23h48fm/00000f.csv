@@ -1,0 +1,3 @@
+"0","fev_data %>%"
+"0","  ggplot() +"
+"0","  geom_point(aes(x = age, y = fev)) # aes stands for ""aesthetic"""

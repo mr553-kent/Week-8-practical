@@ -1,0 +1,5 @@
+"0","fev_data %>%"
+"0","  mutate(smoke = as.character(smoke)) %>%"
+"0","  ggplot() + "
+"0","  geom_bar(aes(x = smoke))  # by default, the y variable is the count of the x (in this case, number of smokers)"
+"0",""

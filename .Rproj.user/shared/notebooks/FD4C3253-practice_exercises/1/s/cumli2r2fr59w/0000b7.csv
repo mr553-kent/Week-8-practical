@@ -1,0 +1,7 @@
+"0","  xlab(""deprivation decile"") + "
+"0","  ylab(""median alcohol-related admissions"") + "
+"0","  ggtitle(""Alcohol-related hospital admissions in 2019 by deprivation decile"") + "
+"0","  theme_bw()"
+"2","Error in xlab(""deprivation decile"") + ylab(""median alcohol-related admissions"") : 
+  non-numeric argument to binary operator
+"
